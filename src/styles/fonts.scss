@@ -1,0 +1,31 @@
+$font-family: 'Aeroport';
+
+@font-face {
+  font-family: $font-family;
+  src: url('/fonts/#{$font-family}-Bold.woff2') format('woff2'),
+    url('/fonts/#{$font-family}-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family;
+  src: url('/fonts/#{$font-family}-Medium.woff2') format('woff2'),
+    url('/fonts/#{$font-family}-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font-family;
+  src: url('/fonts/#{$font-family}-Regular.woff2') format('woff2'),
+    url('/fonts/#{$font-family}-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font-family;
+  src: url('/fonts/#{$font-family}-Italic.woff2') format('woff2'),
+    url('/fonts/#{$font-family}-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
