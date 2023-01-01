@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
-import ChangeLifeCard from './ChangeLifeCard';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
+import ChangeLifeCard from "./ChangeLifeCard";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -12,9 +12,9 @@ const ChangeLife = (props: Props) => {
   const [changeLifeItems, setChangeLifeItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setChangeLifeItems(json['changeLifeItems']));
+      .then((json) => setChangeLifeItems(json["changeLifeItems"]));
   }, []);
 
   return (
@@ -22,14 +22,19 @@ const ChangeLife = (props: Props) => {
       <Container>
         <ChangeLifeHeader>
           <ChangeLifeTitle>
-            Ученики, поменявшие жизнь{' '}
+            Ученики, поменявшие жизнь{" "}
             <ChangeLifeTitleSpan>благодаря нашей школе</ChangeLifeTitleSpan>
           </ChangeLifeTitle>
-          <ChangeLifeLink to={'#'}>Поделиться историей</ChangeLifeLink>
+          <ChangeLifeLink to={"#"}>Поделиться историей</ChangeLifeLink>
         </ChangeLifeHeader>
         <ChangeLifeCards>
           {changeLifeItems.map(({ img, title, description }, index) => (
-            <ChangeLifeCard img={img} title={title} description={description} key={index} />
+            <ChangeLifeCard
+              img={img}
+              title={title}
+              description={description}
+              key={index}
+            />
           ))}
         </ChangeLifeCards>
       </Container>

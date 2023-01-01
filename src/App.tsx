@@ -1,23 +1,22 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import './styles/fonts.scss';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './styles/GlobalStyles';
-import Home from './pages/Home';
-import theme from './styles/theme';
-import BlackFriday from './components/BlackFriday';
-import Nav from './components/Nav';
-import Components from './pages/Components';
-import Sitemap from './pages/Sitemap';
-import Workshop from './pages/Workshop';
+import "./styles/fonts.scss";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./styles/GlobalStyles";
+import Home from "./pages/Home";
+import theme from "./styles/theme";
+import BlackFriday from "./components/BlackFriday";
+import Nav from "./components/Nav";
+import Components from "./pages/Components";
+import Sitemap from "./pages/Sitemap";
+import Workshop from "./pages/Workshop";
 
-import Story from './pages/Story';
-import Comparison from './pages/Comparison';
-import Vip from './pages/Vip';
-import Footer from './components/Footer';
-import Crypto from './pages/Crypto';
+import Story from "./pages/Story";
+import Comparison from "./pages/Comparison";
+import Vip from "./pages/Vip";
+import Footer from "./components/Footer";
+import Crypto from "./pages/Crypto";
 
 function App() {
   return (

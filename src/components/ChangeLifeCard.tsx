@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
 
 type Props = {
   img: string;
@@ -12,7 +12,7 @@ const ChangeLifeCard = ({ img, title, description }: Props) => {
   return (
     <ChangeLifeCardWrap>
       <ChangeLifeCardImgBox>
-        <ChangeLifeCardImg src={`./images/${img}.png`} alt={'img'} />
+        <ChangeLifeCardImg src={`./images/${img}.png`} alt={"img"} />
       </ChangeLifeCardImgBox>
       <ChangeLifeCardText>
         <ChangeLifeCardTitle>{title}</ChangeLifeCardTitle>

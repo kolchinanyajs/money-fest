@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
-import Expert from './Expert';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
+import Expert from "./Expert";
 
 type Props = {};
 
@@ -11,9 +11,9 @@ const Experts = (props: Props) => {
   const [expertItems, setExpertItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setExpertItems(json['expertItems']));
+      .then((json) => setExpertItems(json["expertItems"]));
   }, []);
 
   return (
@@ -22,7 +22,12 @@ const Experts = (props: Props) => {
         <ExpertsTitle>Эксперты школы</ExpertsTitle>
         <ExpertsInner>
           {expertItems.map(({ img, title, description }, index) => (
-            <Expert img={img} title={title} description={description} key={index} />
+            <Expert
+              img={img}
+              title={title}
+              description={description}
+              key={index}
+            />
           ))}
         </ExpertsInner>
       </Container>

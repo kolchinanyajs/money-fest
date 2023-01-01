@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import Socials from './Socials';
-import { LogoWrap } from './Logo';
-import ArrowTop from './ArrowTop';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import Socials from "./Socials";
+import { LogoWrap } from "./Logo";
+import ArrowTop from "./ArrowTop";
 
 type Props = {};
 
@@ -22,7 +22,9 @@ const Footer = (props: Props) => {
             <FooterItem>
               <FooterTitle>Все курсы</FooterTitle>
               <FooterText>Криптоинвестиции: успешный старт</FooterText>
-              <FooterText>Мастерская трейдинга: практика и заработок</FooterText>
+              <FooterText>
+                Мастерская трейдинга: практика и заработок
+              </FooterText>
               <FooterText>Индивидуальное сопровождение эксперта</FooterText>
             </FooterItem>
             <FooterItem custom={true}>
@@ -33,7 +35,9 @@ const Footer = (props: Props) => {
           </FooterTop>
           <FooterBottom>
             <FooterBottomTitle href="#">ООО «Манифест»</FooterBottomTitle>
-            <FooterBottomTitle href="#">Политика конфиденциальности</FooterBottomTitle>
+            <FooterBottomTitle href="#">
+              Политика конфиденциальности
+            </FooterBottomTitle>
             <FooterBottomTitle href="#">Договор–оферта</FooterBottomTitle>
           </FooterBottom>
         </FooterInner>

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Input from './Input';
-import Button from './Button';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Input from "./Input";
+import Button from "./Button";
 
 type Props = {};
 
@@ -28,7 +28,7 @@ const Questions = (props: Props) => {
           </QuestionsInputs>
           <QuestionsActions>
             <QuestionsActionsInfo>
-              Нажимая «Отправить», соглашаюсь&nbsp;с{' '}
+              Нажимая «Отправить», соглашаюсь&nbsp;с{" "}
               <QuestionsActionsLink href="#">правилами</QuestionsActionsLink>
             </QuestionsActionsInfo>
             <QuestionsActionsButton dark big>

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
 
 type Props = {};
 
@@ -10,9 +10,9 @@ const ForYou = (props: Props) => {
   const [forYouItem, setForYouItem] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setForYouItem(json['forYou']));
+      .then((json) => setForYouItem(json["forYou"]));
   }, []);
   return (
     <ForYouWrap>

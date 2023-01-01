@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import { Link } from 'react-router-dom';
-import TextArrow from './TextArrow';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import { Link } from "react-router-dom";
+import TextArrow from "./TextArrow";
 
 type Props = {
   label: string;
@@ -13,17 +13,17 @@ type Props = {
 
 const Course = ({ label, title, description, id }: Props) => {
   return (
-    <CourseWrap to={'/'}>
+    <CourseWrap to={"/"}>
       <CourseContent>
         <CourseLabel>{label}</CourseLabel>
         <CourseTitle>{title}</CourseTitle>
         <CourseDescription>{description}</CourseDescription>
         <CourseMore>
-          <TextArrow text={'Подробнее'} />
+          <TextArrow text={"Подробнее"} />
         </CourseMore>
       </CourseContent>
       <CourseImgBox>
-        <CourseImg src={`./images/course-${id}.png`} alt={'img'} />
+        <CourseImg src={`./images/course-${id}.png`} alt={"img"} />
       </CourseImgBox>
     </CourseWrap>
   );

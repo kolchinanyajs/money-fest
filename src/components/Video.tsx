@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
 
 type Props = {};
 
@@ -31,10 +31,10 @@ const VideoCover = styled.div`
   height: 100%;
   top: 0;
   left: 0;
-  background: url('./images/video-cover.png') no-repeat center center;
+  background: url("./images/video-cover.png") no-repeat center center;
   background-size: cover;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

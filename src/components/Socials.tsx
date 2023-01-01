@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
 
 type Props = {
   icon?: string;
 };
 
 const Socials = (props: Props) => {
-  const icons = ['vk', 'youtube', 'tg'];
+  const icons = ["vk", "youtube", "tg"];
 
   return (
     <SocialsWrap>
@@ -26,7 +26,8 @@ const SocialsWrap = styled.div`
 const SocialsLink = styled.a<{ icon?: string }>`
   width: ${rem(32)};
   height: ${rem(32)};
-  background: ${(props) => `url("./images/${props.icon}.svg") no-repeat center center`};
+  background: ${(props) =>
+    `url("./images/${props.icon}.svg") no-repeat center center`};
   background-size: cover;
 `;
 

@@ -1,7 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from 'src/components/Container';
+import React from "react";
+import styled from "styled-components";
+import Container from "src/components/Container";
 
 type Props = {};
 

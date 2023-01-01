@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
 
 type Props = {};
 
@@ -9,9 +9,9 @@ const Peculiarities = (props: Props) => {
   const [peculiaritiesItem, setPeculiaritiesItem] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setPeculiaritiesItem(json['peculiaritiesCrypto']));
+      .then((json) => setPeculiaritiesItem(json["peculiaritiesCrypto"]));
   }, []);
 
   return (

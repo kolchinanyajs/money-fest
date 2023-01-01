@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -9,9 +9,9 @@ const Menu = (props: Props) => {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setMenuItems(json['menuItems']));
+      .then((json) => setMenuItems(json["menuItems"]));
   }, []);
 
   return (

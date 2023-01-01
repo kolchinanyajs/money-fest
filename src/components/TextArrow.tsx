@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
 
 type Props = {
   text: string;
@@ -33,7 +33,7 @@ const TextArrowIcon = styled.i`
   top: ${rem(2)};
   width: ${rem(21)};
   height: ${rem(21)};
-  background: url('./images/icon-arrow.svg') no-repeat center center;
+  background: url("./images/icon-arrow.svg") no-repeat center center;
 `;
 
 export default TextArrow;

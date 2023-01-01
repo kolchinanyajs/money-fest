@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import Logo from './Logo';
-import Menu from './Menu';
-import Button from './Button';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import Logo from "./Logo";
+import Menu from "./Menu";
+import Button from "./Button";
 
 type Props = {};
 

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
-import Course, { CourseTitle } from './Course';
-import { Link } from 'react-router-dom';
-import TextArrow, { TextArrowWrap } from './TextArrow';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
+import Course, { CourseTitle } from "./Course";
+import { Link } from "react-router-dom";
+import TextArrow from "./TextArrow";
 
 type Props = {};
 
@@ -13,9 +13,9 @@ const Courses = (props: Props) => {
   const [coursesItems, setCoursesItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setCoursesItems(json['coursesItems']));
+      .then((json) => setCoursesItems(json["coursesItems"]));
   }, []);
 
   return (
@@ -33,9 +33,9 @@ const Courses = (props: Props) => {
                 key={index}
               />
             ) : (
-              <CoursesChoice to={'/'} key={index}>
+              <CoursesChoice to={"/"} key={index}>
                 <CoursesChoiceTitle>Какой выбрать?</CoursesChoiceTitle>
-                <TextArrow text={'Сравнить курсы'} />
+                <TextArrow text={"Сравнить курсы"} />
               </CoursesChoice>
             );
           })}

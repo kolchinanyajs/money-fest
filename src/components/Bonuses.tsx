@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
 
 type Props = {};
 
@@ -10,9 +10,9 @@ const Bonuses = (props: Props) => {
   const [cryptoBonuses, setCryptoBonuses] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setCryptoBonuses(json['cryptoBonuses']));
+      .then((json) => setCryptoBonuses(json["cryptoBonuses"]));
   }, []);
 
   return (
@@ -22,7 +22,8 @@ const Bonuses = (props: Props) => {
           <BonusesText>
             <BonusesTitle>Бонусы для каждого ученика</BonusesTitle>
             <BonusesDescription>
-              То, что поможет погрузиться в тему с головой и начать зарабатывать прямо на курсе.
+              То, что поможет погрузиться в тему с головой и начать зарабатывать
+              прямо на курсе.
             </BonusesDescription>
           </BonusesText>
           <BonusesItems>

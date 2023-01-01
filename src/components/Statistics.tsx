@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import Statistic from './Statistic';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import Statistic from "./Statistic";
 
 type Props = {};
 
@@ -10,9 +10,9 @@ const Statistics = (props: Props) => {
   const [statisticsItems, setStatisticsItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setStatisticsItems(json['statisticsItems']));
+      .then((json) => setStatisticsItems(json["statisticsItems"]));
   }, []);
 
   return (

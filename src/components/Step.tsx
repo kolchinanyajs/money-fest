@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import formattingJSON from 'src/utils/formattingJSON';
+import React from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import formattingJSON from "src/utils/formattingJSON";
 
 type Props = {
   id: number;

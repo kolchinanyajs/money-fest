@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { rem } from 'polished';
-import Container from './Container';
-import { H2Wrap } from './H2';
-import Video from './Video';
-import Step from './Step';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { rem } from "polished";
+import Container from "./Container";
+import { H2Wrap } from "./H2";
+import Video from "./Video";
+import Step from "./Step";
 
 const How = () => {
   const [stepItems, setStepItems] = useState([]);
 
   useEffect(() => {
-    fetch('db/db.json')
+    fetch("db/db.json")
       .then((response) => response.json())
-      .then((json) => setStepItems(json['stepItems']));
+      .then((json) => setStepItems(json["stepItems"]));
   }, []);
 
   return (
@@ -22,7 +22,12 @@ const How = () => {
         <Video />
         <HowSteps>
           {stepItems.map(({ title, description }, index) => (
-            <Step title={title} description={description} id={index + 1} key={index} />
+            <Step
+              title={title}
+              description={description}
+              id={index + 1}
+              key={index}
+            />
           ))}
         </HowSteps>
       </Container>
