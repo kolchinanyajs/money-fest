@@ -4,9 +4,7 @@ import { rem } from "polished";
 import Container from "./Container";
 import { H2Wrap } from "./H2";
 
-type Props = {};
-
-const About = (props: Props) => {
+const About = () => {
   return (
     <AboutWrap>
       <Container>
@@ -60,7 +58,7 @@ const About = (props: Props) => {
               </AboutItemText>
             </AboutItemHeader>
             <AboutItemContent>
-              Дмитрий, спасибо Вам за уроки))) Вы обьясняете доступно и понятно
+              Дмитрий, спасибо Вам за уроки. Вы обьясняете доступно и понятно
               каждую тему. Во многом, благодаря Вам, хочется и дальше
               развиваться в данном направлении. Спасибо за те знания, которые Вы
               вкладываете в своих учеников.
@@ -140,6 +138,9 @@ const AboutTitle = styled(H2Wrap)`
 const AboutItems = styled.div`
   column-count: 3;
   gap: ${rem(30)};
+  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+    column-count: 1;
+  }
 `;
 
 const AboutItem = styled.div`

@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { rem } from 'polished';
+import { createGlobalStyle } from "styled-components";
+import { rem } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -108,6 +108,10 @@ const GlobalStyle = createGlobalStyle`
         background-size: ${rem(217)} ${rem(8)};
       }
     }
+  }
+
+  .swiper {
+    width: 100%;
   }
 `;
 

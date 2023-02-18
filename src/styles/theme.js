@@ -1,11 +1,11 @@
 const theme = {
   colors: {
-    black: '#000000',
-    white: '#ffffff',
-    yellow: '#fcc344',
-    secondary: '#717171',
-    grey: '#8D8D8D',
-    bgGrey: '#f7f7f7',
+    black: "#000000",
+    white: "#ffffff",
+    yellow: "#fcc344",
+    secondary: "#717171",
+    grey: "#8D8D8D",
+    bgGrey: "#f7f7f7",
   },
   radius: {
     button: 8,
@@ -13,14 +13,14 @@ const theme = {
     latest: 16,
   },
   transition: {
-    hover: 'all 200ms linear',
+    hover: "all 200ms linear",
   },
   breakpoints: {
-    sm: '576px',
-    lg: '900px',
-    xl: '1024px',
-    xxl: '1200px',
-    xxxl: '1600px',
+    sm: "576px",
+    lg: "900px",
+    xl: "1024px",
+    xxl: "1200px",
+    xxxl: "1600px",
   },
 };
 
