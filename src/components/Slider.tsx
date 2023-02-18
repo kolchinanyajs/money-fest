@@ -3,14 +3,26 @@ import styled from "styled-components";
 import { rem } from "polished";
 import Container from "./Container";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import { Navigation } from "swiper";
 import Button from "./Button";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Slider = () => {
   return (
     <BannerWrap>
       <Container>
-        <Swiper spaceBetween={50} slidesPerView={1}>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            disabledClass: "swiper-button-disabled",
+          }}
+          modules={[Navigation]}
+        >
           <SwiperSlide>
             <Slide>
               <SlideContent>
@@ -37,6 +49,8 @@ const Slider = () => {
             <Slide>Slide 1</Slide>
           </SwiperSlide>
         </Swiper>
+        <div className="swiper-button swiper-button-next"></div>
+        <div className="swiper-button swiper-button-prev"></div>
       </Container>
     </BannerWrap>
   );
@@ -47,6 +61,7 @@ const BannerWrap = styled.div`
 `;
 
 const Slide = styled.div`
+  overflow: hidden;
   position: relative;
   display: flex;
   background: ${(props) => props.theme.colors.bgGrey};

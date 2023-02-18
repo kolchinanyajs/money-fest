@@ -17,7 +17,7 @@ const Home = () => {
       <Courses />
       <How />
       <Experts />
-      <About />
+      {/* <About /> */}
       <ChangeLife />
       <Questions />
     </HomeWrap>

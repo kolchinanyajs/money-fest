@@ -1,4 +1,3 @@
-import "./styles/fonts.scss";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import styled from "styled-components";
@@ -11,12 +10,14 @@ import Nav from "./components/Nav";
 import Components from "./pages/Components";
 import Sitemap from "./pages/Sitemap";
 import Workshop from "./pages/Workshop";
-
 import Story from "./pages/Story";
 import Comparison from "./pages/Comparison";
 import Vip from "./pages/Vip";
 import Footer from "./components/Footer";
 import Crypto from "./pages/Crypto";
+
+import "./styles/fonts.scss";
+import "./styles/swiper.scss";
 
 function App() {
   return (
