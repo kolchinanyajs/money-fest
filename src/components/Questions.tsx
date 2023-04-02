@@ -62,7 +62,7 @@ const QuestionsWrap = styled.div`
 `;
 
 const QuestionsText = styled.div`
-  max-width: 290px;
+  max-width: ${rem(290)};
   @media (max-width: 955px) {
     max-width: 100%;
   }
@@ -84,7 +84,7 @@ const QuestionsDescription = styled.p`
 `;
 
 const QuestionsForm = styled.form`
-  max-width: 424px;
+  max-width: ${rem(424)};
   width: 100%;
   @media (max-width: 955px) {
     flex-grow: 1;

@@ -151,7 +151,7 @@ const AboutItem = styled.div`
   margin: 0;
   display: grid;
   grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
+  margin-bottom: ${rem(10)};
   break-inside: avoid;
 `;
 

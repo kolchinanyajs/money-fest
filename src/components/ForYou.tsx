@@ -57,7 +57,7 @@ const ForYouItem = styled.div`
 `;
 
 const ForYouIcon = styled.img`
-  margin-bottom: 20px;
+  margin-bottom: ${rem(20)};
 `;
 
 // TODO: изменить тег
