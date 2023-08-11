@@ -7,7 +7,7 @@ import How from "src/components/How";
 import Experts from "src/components/Experts";
 import ChangeLife from "src/components/ChangeLife";
 import Questions from "src/components/Questions";
-import About from "src/components/About";
+// import About from "src/components/About";
 
 const Home = () => {
   return (
