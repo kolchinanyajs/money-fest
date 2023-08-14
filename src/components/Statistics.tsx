@@ -10,18 +10,22 @@ const Statistics = (props: Props) => {
   const [statisticsItems, setStatisticsItems] = useState([]);
 
   useEffect(() => {
-    fetch("db/db.json")
+    fetch(`${process.env.REACT_APP_API_URL}statistics`)
       .then((response) => response.json())
-      .then((json) => setStatisticsItems(json["statisticsItems"]));
+      .then(({ data }) => setStatisticsItems(data));
   }, []);
+
+  statisticsItems.map(({ attributes }) => console.log(attributes));
 
   return (
     <StatisticsWrap>
       <Container>
         <StatisticsInner>
-          {statisticsItems.map(({ count, description }, index) => (
-            <Statistic count={count} description={description} key={index} />
-          ))}
+          {statisticsItems.map(
+            ({ attributes: { count, description } }, index) => (
+              <Statistic count={count} description={description} key={index} />
+            )
+          )}
         </StatisticsInner>
       </Container>
     </StatisticsWrap>

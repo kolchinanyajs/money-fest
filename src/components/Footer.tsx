@@ -27,7 +27,7 @@ const Footer = (props: Props) => {
               </FooterText>
               <FooterText>Индивидуальное сопровождение эксперта</FooterText>
             </FooterItem>
-            <FooterItem custom={true}>
+            <FooterItem $custom={true}>
               <FooterSubText>Главная</FooterSubText>
               <FooterSubText>Курсы</FooterSubText>
               <FooterSubText>Эксперты</FooterSubText>
@@ -65,8 +65,8 @@ const FooterTop = styled.div`
   padding-bottom: ${rem(81)};
 `;
 
-const FooterItem = styled.div<{ custom?: boolean }>`
-  padding-top: ${(props) => (props.custom ? rem(45) : rem(0))};
+const FooterItem = styled.div<{ $custom?: boolean }>`
+  padding-top: ${(props) => (props.$custom ? rem(45) : rem(0))};
   &:first-child {
     width: calc(370 / 1170 * 100%);
   }
