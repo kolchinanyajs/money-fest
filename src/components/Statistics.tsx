@@ -4,9 +4,7 @@ import { rem } from "polished";
 import Container from "./Container";
 import Statistic from "./Statistic";
 
-type Props = {};
-
-const Statistics = (props: Props) => {
+const Statistics = () => {
   const [statisticsItems, setStatisticsItems] = useState([]);
 
   useEffect(() => {
@@ -14,8 +12,6 @@ const Statistics = (props: Props) => {
       .then((response) => response.json())
       .then(({ data }) => setStatisticsItems(data));
   }, []);
-
-  statisticsItems.map(({ attributes }) => console.log(attributes));
 
   return (
     <StatisticsWrap>
@@ -36,7 +32,7 @@ const StatisticsWrap = styled.div`
   margin-bottom: ${rem(140)};
 `;
 
-const StatisticsInner = styled.div`
+const StatisticsInner = styled.ul`
   display: grid;
   gap: ${rem(30)};
   grid-template-columns: repeat(auto-fit, minmax(${rem(270)}, auto));

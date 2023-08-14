@@ -9,14 +9,12 @@ type Props = {
 
 const Statistic = ({ count, description }: Props) => {
   return (
-    <StatisticWrap>
+    <li>
       <StatisticCount>{count}</StatisticCount>
       <StatisticDescription>{description}</StatisticDescription>
-    </StatisticWrap>
+    </li>
   );
 };
-
-const StatisticWrap = styled.div``;
 
 const StatisticCount = styled.p`
   font-weight: 700;
@@ -29,9 +27,8 @@ const StatisticCount = styled.p`
 const StatisticDescription = styled.p`
   font-weight: 400;
   font-size: ${rem(18)};
-  line-height: 133%;
-  // TODO: в theme
-  color: #717171;
+  line-height: 1.33;
+  color: ${(props) => props.theme.colors.secondary};
   white-space: pre-wrap;
 `;
 
