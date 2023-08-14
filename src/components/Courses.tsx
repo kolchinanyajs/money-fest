@@ -7,9 +7,7 @@ import Course, { CourseTitle } from "./Course";
 import { Link } from "react-router-dom";
 import TextArrow from "./TextArrow";
 
-type Props = {};
-
-const Courses = (props: Props) => {
+const Courses = () => {
   const [coursesItems, setCoursesItems] = useState([]);
 
   useEffect(() => {
@@ -66,11 +64,11 @@ const CoursesInner = styled.div`
 const CoursesChoice = styled(Link)`
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  border: ${rem(2)} solid #f7f7f7;
+  justify-content: center;
   border-radius: ${rem(32)};
   padding: ${rem(40)} ${rem(30)} ${rem(30)} ${rem(40)};
+  border: ${rem(2)} solid ${(props) => props.theme.colors.bgGrey};
 `;
 
 const CoursesChoiceTitle = styled(CourseTitle)`
