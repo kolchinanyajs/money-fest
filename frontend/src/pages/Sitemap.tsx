@@ -48,11 +48,13 @@ const Sitemap = (props: Props) => {
   return (
     <SitemapWrap>
       <Container>
-        {links.map(({ link, name }) => (
-          <SitemapLink key={name} to={link}>
-            {name}
-          </SitemapLink>
-        ))}
+        <SitemapInner>
+          {links.map(({ link, name }) => (
+            <SitemapLink key={name} to={link}>
+              {name}
+            </SitemapLink>
+          ))}
+        </SitemapInner>
       </Container>
     </SitemapWrap>
   );
@@ -60,6 +62,12 @@ const Sitemap = (props: Props) => {
 
 const SitemapWrap = styled.div`
   margin-bottom: ${rem(100)};
+`;
+
+const SitemapInner = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const SitemapLink = styled(Link)``;
