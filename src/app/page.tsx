@@ -1,9 +1,10 @@
 import Button from "@/components/Button";
+import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
     <>
-      <Button>sdf</Button>
+      <Slider />
     </>
   );
 }
