@@ -1,8 +1,6 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  max-width: rem(1170);
-  padding: 0 rem(30);
+  --container-max-width: #{rem(1170)};
+  --container-padding: #{rem(30)};
+  width: min(var(--container-max-width), 100% - (var(--container-padding) * 2));
   margin: 0 auto;
 }

@@ -1,0 +1,32 @@
+.blackfriday {
+  position: relative;
+  margin-bottom: rem(33);
+  background: var(--black) url("/images/black-friday.jpg") no-repeat 70% center;
+  background-size: cover;
+  height: rem(70);
+  display: flex;
+  align-items: center;
+  &__inner {
+    display: flex;
+    margin-left: auto;
+    gap: rem(303);
+    margin-right: rem(39);
+  }
+  &__text {
+    color: var(--white);
+    font-weight: 700;
+    font-size: rem(24);
+    line-height: 1.33;
+    text-align: right;
+  }
+  &__button {
+    @include reset-btn;
+    cursor: pointer;
+    --size: #{rem(33)};
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: var(--cultured) url("/images/close.svg") no-repeat center center;
+    background-size: rem(16) rem(16);
+  }
+}
